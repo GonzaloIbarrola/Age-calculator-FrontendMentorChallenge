@@ -1,0 +1,42 @@
+@tailwind base;
+
+@layer base {
+  body {
+    @apply font-poppins bg-light-grey h-screen flex justify-center items-center;
+  }
+
+  main {
+    @apply flex flex-col gap-8 desktop:gap-0;
+  }
+
+  h1,span {
+    @apply font-poppins desktop:text-large text-[56px] italic font-extrabold;
+  }
+
+  label {
+    @apply tracking-[2px] desktop:max-w-[160px] desktop:tracking-[4px] uppercase desktop:text-small w-1/3 text-grey text-[12px];
+  }
+
+  input {
+    @apply border-line focus:outline-purple desktop:mt-2 text-[20px] desktop:text-[32px] desktop:px-6 desktop:py-3 text-black border py-3 px-4 w-full rounded-[8px];
+  }
+
+  li {
+    @apply list-none;
+  }
+
+  hr {
+    @apply border-t-line flex-1;
+  }
+
+  img {
+    @apply w-6 h-6 desktop:w-11 desktop:h-11;
+  }
+
+  button {
+    @apply active:bg-black;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
